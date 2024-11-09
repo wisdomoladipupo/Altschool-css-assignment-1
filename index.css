@@ -5,6 +5,29 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6em;
+  background: rgb(255, 0, 149);
+}
+nav ul{
+  background: rgb(255, 0, 149);
+  list-style-type: none;
+  z-index: 100;
+  display: none;
+
+
+}
+nav ul li{
+  font-size: 1.3em;
+}
+nav svg{
+  width: 2em;
+  height: 2em;
+}
 h1 {
   background: rgb(255, 0, 149);
   text-align: center;
@@ -31,7 +54,8 @@ main {
   border-radius: 10px;
   justify-content: center;
   position: relative;
-  top: 10rem;
+  top: 12rem;
+  z-index: 1;
 }
 
 
