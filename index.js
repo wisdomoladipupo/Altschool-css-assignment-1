@@ -1,12 +1,10 @@
 const burger = document.getElementById("svg");
-const navlist = document.getElementsByClassName("navList");
+const navlist = document.querySelector(".navList");
 
 burger.addEventListener("click", () => {
-  navlist.forEach((ele) => {
-    if (ele.style.display === "none" || ele.style.display === "") {
+    if (navlist.style.display === "none" || navlist.style.display === "") {
       navlist.style.display = "block";
     } else {
-      ele.style.display = "none";
+      navlist.style.display = "none";
     }
-  });
 });

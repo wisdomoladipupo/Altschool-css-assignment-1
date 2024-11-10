@@ -5,7 +5,7 @@ body {
   font-family: "Inter", sans-serif;
 }
 
-nav{
+nav {
   position: fixed;
   top: 0;
   left: 0;
@@ -13,18 +13,34 @@ nav{
   height: 6em;
   background: rgb(255, 0, 149);
 }
-nav ul{
+nav ul {
   background: rgb(255, 0, 149);
+  border-bottom-right-radius: 1em;
   list-style-type: none;
+  width: 22em;
+  height: 15em;
   z-index: 100;
   display: none;
-
-
+  animation: drop 4s both;
+  transition: all ease-in-out;
 }
-nav ul li{
+
+@keyframes drop {
+  from {
+    opacity: 0;
+    transform: none;
+  }
+  50%,
+  to {
+    opacity: 1;
+    transform: translateY(2em);
+  }
+}
+
+nav ul li {
   font-size: 1.3em;
 }
-nav svg{
+nav svg {
   width: 2em;
   height: 2em;
 }
@@ -59,7 +75,6 @@ main {
   z-index: 1;
 }
 
-
 /* css for smaller screen sizes  */
 @media (max-width: 450px) {
   h1 {
@@ -72,7 +87,7 @@ main {
     position: absolute;
     top: -1.4em;
   }
-  
+
   main {
     font-family: "Inter", sans-serif;
     font-size: 1em;
@@ -90,5 +105,4 @@ main {
     position: relative;
     top: 10rem;
   }
-  
 }
